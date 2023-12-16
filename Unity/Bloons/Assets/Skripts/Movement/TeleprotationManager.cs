@@ -11,21 +11,22 @@ public class TeleprotationManager : MonoBehaviour
     [SerializeField] private TeleportationProvider provider;
    
     private InputAction thumbstick;
-    private bool isActive = false;
+    [SerializeField] private bool isActive = false;
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Test");
         rayInteractor.enabled = false;
 
-        var activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+        var activate = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Activate");
         activate.Enable();
         activate.performed += OnTeleportActivate;
 
-        var cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
+        var cancel = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Teleport Mode Cancel");
         cancel.Enable();
         cancel.performed += OnTeleportCancel;
 
-        thumbstick = actionAsset.FindActionMap("XRI LeftHand").FindAction("Move");
+        thumbstick = actionAsset.FindActionMap("XRI LeftHand Locomotion").FindAction("Move");
         thumbstick.Enable();
     }
 
@@ -39,6 +40,7 @@ public class TeleprotationManager : MonoBehaviour
 
         if(thumbstick.triggered)
         {
+            Debug.Log("thumbstick Triggert");
             return;
         }
 
@@ -66,12 +68,14 @@ public class TeleprotationManager : MonoBehaviour
     {
         rayInteractor.enabled = true;
         isActive = true;
+        Debug.Log("Activate");
     }
 
     private void OnTeleportCancel(InputAction.CallbackContext context)
     {
         rayInteractor.enabled = false;
         isActive = false;
+        Debug.Log("deactivate");
     }
 
 }
