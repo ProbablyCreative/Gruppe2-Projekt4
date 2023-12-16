@@ -1395,7 +1395,7 @@ MonoBehaviour:
     m_Reference: {fileID: 1031966339891076899, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_SelectAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Select
       m_Type: 1
@@ -1405,7 +1405,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   m_SelectActionValue:
     m_UseReference: 0
     m_Action:
@@ -1419,7 +1420,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ActivateAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Activate
       m_Type: 1
@@ -1429,7 +1430,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   m_ActivateActionValue:
     m_UseReference: 0
     m_Action:
@@ -1810,7 +1812,6 @@ GameObject:
   - component: {fileID: 1359178810}
   - component: {fileID: 1359178809}
   - component: {fileID: 1359178808}
-  - component: {fileID: 1359178807}
   m_Layer: 0
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -1833,22 +1834,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1656719791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1359178807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359178805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd360c479ac89b041b9830c0a8cd6e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
-  rayInteractor: {fileID: 754375917}
-  provider: {fileID: 1359178808}
 --- !u!114 &1359178808
 MonoBehaviour:
   m_ObjectHideFlags: 0
