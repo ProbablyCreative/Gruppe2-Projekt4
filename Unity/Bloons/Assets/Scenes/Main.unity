@@ -568,7 +568,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 2025520151291504612, guid: 89f3f6014e8b2be4fb3c46ae166495ac,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1336,7 +1337,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 2025520151291504612, guid: 89f3f6014e8b2be4fb3c46ae166495ac,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1927,7 +1929,7 @@ PrefabInstance:
     - target: {fileID: 7356712095440950767, guid: 7e3818baa2b485c418422c044ccb5195,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7356712095440950767, guid: 7e3818baa2b485c418422c044ccb5195,
         type: 3}
@@ -1968,6 +1970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656328202496623558, guid: 7e3818baa2b485c418422c044ccb5195,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2271,7 +2278,7 @@ PrefabInstance:
     - target: {fileID: 7356712095440950767, guid: 7e3818baa2b485c418422c044ccb5195,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7356712095440950767, guid: 7e3818baa2b485c418422c044ccb5195,
         type: 3}

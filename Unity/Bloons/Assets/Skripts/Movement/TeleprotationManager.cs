@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class TeleprotationManager : MonoBehaviour
 {
-    [SerializeField] private InputActionAsset actionAsset;
+    /*[SerializeField] private InputActionAsset actionAsset;
     [SerializeField] private XRRayInteractor rayInteractor;
     [SerializeField] private TeleportationProvider provider;
    
@@ -77,5 +77,5 @@ public class TeleprotationManager : MonoBehaviour
         isActive = false;
         Debug.Log("deactivate");
     }
-
+    */
 }
