@@ -906,6 +906,7 @@ GameObject:
   - component: {fileID: 754375916}
   - component: {fileID: 754375915}
   - component: {fileID: 754375914}
+  - component: {fileID: 754375919}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -1555,6 +1556,23 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
+--- !u!114 &754375919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754375912}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd360c479ac89b041b9830c0a8cd6e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  rayInteractor: {fileID: 754375917}
+  provider: {fileID: 1359178808}
+  isActive: 0
 --- !u!1 &840614451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,6 +2338,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8656328202496623558, guid: 7e3818baa2b485c418422c044ccb5195,
+        type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 1359178808}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
