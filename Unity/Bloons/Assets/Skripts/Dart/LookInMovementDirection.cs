@@ -38,10 +38,8 @@ public class LookInMovementDirection : MonoBehaviour
 
     private IEnumerator LookMovement()
     {
-        Quaternion lookRotaion = Quaternion.LookRotation(rb.velocity).normalized;
-
-        while (speed < 1) {
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotaion, speed);
+        while (aktivateRotation && speed < 1) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rb.velocity).normalized, speed);
 
             yield return null;
         }
