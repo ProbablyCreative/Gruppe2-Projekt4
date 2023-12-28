@@ -8,15 +8,14 @@ public class LookInMovementDirection : MonoBehaviour
     [SerializeField] public float speed = 0.5f;
     [SerializeField] public int tickRate = 60;
     [SerializeField] public bool aktivateRotation = false;
-    [SerializeField] public float x;
-    [SerializeField] public float y;
-    [SerializeField] public float z;
+    private Vector3 spawnPoint;
+    private Quaternion spawnRotaion;
 
     private Coroutine lookInMovement;
 
     private void Start()
     {
-        startLookingAtMovement();
+       
     }
 
     public void startLookingAtMovement()
@@ -29,16 +28,22 @@ public class LookInMovementDirection : MonoBehaviour
         lookInMovement = StartCoroutine(LookMovement());
     }
 
+    public void stopRotation()
+    {
+        if (lookInMovement != null)
+        {
+            StopCoroutine (lookInMovement);
+        }
+    }
+
     private void Update()
     {
-        x = rb.velocity.x;
-        y = rb.velocity.y;
-        z = rb.velocity.z;
+
     }
 
     private IEnumerator LookMovement()
     {
-        while (aktivateRotation && speed < 1) {
+        while (speed < 1) {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rb.velocity).normalized, speed);
 
             yield return null;
