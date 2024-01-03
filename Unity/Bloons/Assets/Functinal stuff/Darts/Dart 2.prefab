@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 8100768342116610775}
   - component: {fileID: 2996381312938086397}
   - component: {fileID: 1450846938398586947}
+  - component: {fileID: -7821606371445299985}
   m_Layer: 0
   m_Name: Dart 2
   m_TagString: Dart
@@ -401,6 +402,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
+--- !u!114 &-7821606371445299985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7343244255707506928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336da0bd7ee61084192bf38964e223df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6167650009602279130
 PrefabInstance:
   m_ObjectHideFlags: 0
