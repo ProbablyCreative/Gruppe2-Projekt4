@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPath : MonoBehaviour
+public class FollowThePath : MonoBehaviour
 {
     public PathHolder path;
     public float speed = 5;

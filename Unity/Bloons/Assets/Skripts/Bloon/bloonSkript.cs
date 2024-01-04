@@ -7,7 +7,7 @@ using UnityEngine;
 public class bloonSkript : MonoBehaviour
 {
     [SerializeField] private int layer;
-    public static GameObject[] layerList;
+    [SerializeField] public GameObject[] layerList;
 
     private void Start()
     {
