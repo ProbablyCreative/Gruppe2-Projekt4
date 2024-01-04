@@ -7,18 +7,22 @@ using UnityEngine;
 public class bloonSkript : MonoBehaviour
 {
     [SerializeField] private int layer;
-    [SerializeField] public GameObject[] layerList;
+    private Material[] layerList;
+    public SpawnManager spawnManager;
+    public MeshRenderer visual;
 
     private void Start()
     {
-        
+        layerList = spawnManager.bloonsM;
+        updateLayer();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.tag == "Dart")
+        Debug.Log("Trigger Happend");
+        if (other.gameObject.tag == "Dart")
         {
-            dart otherD = other.GetComponent<dart>();
+            dart otherD = other.gameObject.GetComponent<dart>();
             hitThisBloon(otherD.power);
             otherD.durability--;
             if (otherD.durability <= 0)
@@ -27,16 +31,22 @@ public class bloonSkript : MonoBehaviour
             }
         }
     }
-
+   
     private void hitThisBloon (int value)
     {
         layer -= value;
         if (layer < 0)
         {
             Destroy(gameObject);
+            return;
         }
-        GameObject child = gameObject.GetNamedChild("Visual");
-        Destroy(child.transform.GetChild(0).gameObject);
-        Instantiate(layerList[layer], layerList[layer].transform.position, layerList[layer].transform.rotation, child.transform);
+        updateLayer();
+    }
+
+    private void updateLayer()
+    {
+        List<Material> temp = new List<Material>();
+        temp.Add(layerList[layer]);
+        visual.SetMaterials(temp);
     }
 }

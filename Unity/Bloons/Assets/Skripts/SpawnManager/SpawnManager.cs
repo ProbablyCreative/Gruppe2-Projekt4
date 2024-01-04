@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    public Material[] bloonsM;
     // Start is called before the first frame update
     void Start()
     {
