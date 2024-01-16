@@ -11,6 +11,7 @@ public class bloonSkript : MonoBehaviour
     public SpawnManager spawnManager;
     public MeshRenderer visual;
 
+    
     private void Start()
     {
         layerList = spawnManager.bloonsM;
@@ -49,4 +50,6 @@ public class bloonSkript : MonoBehaviour
         temp.Add(layerList[layer]);
         visual.SetMaterials(temp);
     }
+
+   
 }
