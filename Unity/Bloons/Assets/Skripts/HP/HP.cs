@@ -29,4 +29,17 @@ public class HP : MonoBehaviour
         // Ensure HP doesn't go below 0
         if (hp < 0) hp = 0;
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Check if the object we collided with has a tag "Balloon"
+        if (collision.gameObject.tag == "Bloon")
+        {
+            // Calculate damage based on the balloon's layer
+            int damage = collision.gameObject.layer * 2;
+
+            // Decrease the player's HP by the calculated damage
+            ChangeHP(-damage);
+        }
+    }
 }
