@@ -136,7 +136,7 @@ MonoBehaviour:
   rb: {fileID: 2325113343752467467}
   speed: 0.05
   tickRate: 60
-  aktivateRotation: 0
+  aktivateRotation: 1
 --- !u!114 &3708934849309811718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,8 +182,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.01, y: 0.01, z: 0.01}
-  m_Center: {x: 0, y: 0, z: 0.155}
+  m_Size: {x: 0.013002813, y: 0.012454271, z: 0.17498952}
+  m_Center: {x: 0.00024962425, y: 0.0005401373, z: 0.23749477}
 --- !u!54 &2325113343752467467
 Rigidbody:
   m_ObjectHideFlags: 0

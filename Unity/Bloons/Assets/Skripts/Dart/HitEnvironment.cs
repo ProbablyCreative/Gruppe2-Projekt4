@@ -1,17 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEditor.UI;
 using UnityEngine;
 
 public class HitEnvironment : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private void OnCollisionEnter(Collision collision)
+    private Rigidbody rb;
+    private LookInMovementDirection look;
+    private float countDown = 10f;
+    private bool startDestoying = false;
+
+    private void Start()
     {
-        if (collision.gameObject.tag == "Environment")
+        rb = GetComponent<Rigidbody>();
+        look = GetComponent<LookInMovementDirection>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Environment")
         {
-            
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            look.aktivateRotation = false;
+            startDestoying = true;
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (countDown < 0)
+        {
             Destroy(gameObject);
         }
+        if (startDestoying)
+        {
+            countDown -= Time.fixedDeltaTime;
+        }
+        
     }
 }

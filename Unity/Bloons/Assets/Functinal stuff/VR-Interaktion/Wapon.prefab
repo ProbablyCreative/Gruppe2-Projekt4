@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dartToFire: {fileID: 5353827896546722914, guid: 80e960bc5fae69c4281a3688444ae678,
     type: 3}
-  power: 1
+  power: 3
 --- !u!1 &8309273676116181207
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 8
   m_TightenRotation: 0.1
-  m_TrackScale: 1
+  m_TrackScale: 0
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1

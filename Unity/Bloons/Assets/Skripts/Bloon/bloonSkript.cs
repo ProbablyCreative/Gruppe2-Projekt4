@@ -18,22 +18,7 @@ public class bloonSkript : MonoBehaviour
         updateLayer();
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("Trigger Happend");
-        if (other.gameObject.tag == "Dart")
-        {
-            dart otherD = other.gameObject.GetComponent<dart>();
-            hitThisBloon(otherD.power);
-            otherD.durability--;
-            if (otherD.durability <= 0)
-            {
-                Destroy(other.gameObject);
-            }
-        }
-    }
-   
-    private void hitThisBloon (int value)
+    public void hitThisBloon (int value)
     {
         layer -= value;
         if (layer < 0)
