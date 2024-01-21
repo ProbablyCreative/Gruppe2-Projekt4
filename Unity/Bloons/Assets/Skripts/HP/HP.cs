@@ -32,9 +32,20 @@ public class HP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bloon")
         {
-            int damage = collision.gameObject.layer * 2;
+            int damage = collision.gameObject.GetComponent<bloonSkript>().layer;
 
             ChangeHP(-damage);
+        }
+    }
+
+  /*     void Update()
+    {
+        hpText.text = "HP: " + hp;
+
+        if (hp <= 0)
+        {
+            Debug.Log("Spiel beendet");
+            Application.Quit();
         }
     }
 
@@ -55,5 +66,5 @@ public class HP : MonoBehaviour
 
         // Initialisieren Sie die HP-Anzeige
         hpText.text = "HP: " + hp;
-    }
+    }*/
 }
