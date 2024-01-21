@@ -7,47 +7,26 @@ public class LookInMovementDirection : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] public float speed = 0.5f;
     [SerializeField] public int tickRate = 60;
-    [SerializeField] public bool aktivateRotation = false;
+    [SerializeField] public bool aktivateRotation = true;
     private Vector3 spawnPoint;
     private Quaternion spawnRotaion;
+    private int count = 0;
 
-    private Coroutine lookInMovement;
-
-    private void Start()
+    private void FixedUpdate()
     {
-       
-    }
-
-    public void startLookingAtMovement()
-    {
-        if (lookInMovement != null)
+        if (!aktivateRotation)
         {
-            StopCoroutine(lookInMovement);
+            return;
         }
-
-        lookInMovement = StartCoroutine(LookMovement());
-    }
-
-    public void stopRotation()
-    {
-        if (lookInMovement != null)
+        if (count == 1){
+            transform.rotation = Quaternion.LookRotation(rb.velocity).normalized;
+        }
+        else
         {
-            StopCoroutine (lookInMovement);
+            count++;
         }
     }
-
-    private void Update()
-    {
-
-    }
-
-    private IEnumerator LookMovement()
-    {
-        while (speed < 1) {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rb.velocity).normalized, speed);
-
-            yield return null;
-        }
-    }
+        
+    
 
 }
