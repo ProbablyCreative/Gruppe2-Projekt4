@@ -11,28 +11,14 @@ public class bloonSkript : MonoBehaviour
     public SpawnManager spawnManager;
     public MeshRenderer visual;
 
+    
     private void Start()
     {
         layerList = spawnManager.bloonsM;
         updateLayer();
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("Trigger Happend");
-        if (other.gameObject.tag == "Dart")
-        {
-            dart otherD = other.gameObject.GetComponent<dart>();
-            hitThisBloon(otherD.power);
-            otherD.durability--;
-            if (otherD.durability <= 0)
-            {
-                Destroy(other.gameObject);
-            }
-        }
-    }
-   
-    private void hitThisBloon (int value)
+    public void hitThisBloon (int value)
     {
         layer -= value;
         if (layer < 0)
@@ -49,4 +35,6 @@ public class bloonSkript : MonoBehaviour
         temp.Add(layerList[layer]);
         visual.SetMaterials(temp);
     }
+
+   
 }
