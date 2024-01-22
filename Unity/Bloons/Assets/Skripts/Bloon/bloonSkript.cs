@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class bloonSkript : MonoBehaviour
 {
-    [SerializeField] private int layer;
+    [SerializeField] public int layer;
     private Material[] layerList;
     public SpawnManager spawnManager;
     public MeshRenderer visual;
