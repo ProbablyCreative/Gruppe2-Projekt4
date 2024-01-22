@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BloonsGoal_BackUp : MonoBehaviour
 {
+    public StatDisplayManager statDisplayManager;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Bloon")
@@ -18,8 +19,7 @@ public class BloonsGoal_BackUp : MonoBehaviour
     private void hitHP(int damage)
     {
         GameData.hp -= damage;
-        Debug.Log("HP Update:");
-        Debug.Log(GameData.hp);
+        statDisplayManager.updateStats();
         if (GameData.hp <= 0)
         {
             endGame();

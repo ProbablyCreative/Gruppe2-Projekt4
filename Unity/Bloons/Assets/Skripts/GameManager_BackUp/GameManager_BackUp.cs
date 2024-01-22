@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager_BackUp : MonoBehaviour
 {
+    public StatDisplayManager statDisplayManager;
     public int initHp = 100;
     // Start is called before the first frame update
     void Start()
@@ -15,9 +16,6 @@ public class GameManager_BackUp : MonoBehaviour
     public void updateScore(int addScore)
     {
         GameData.score += addScore;
-        Debug.Log("Score Update:");
-        Debug.Log(GameData.score);
-        //TODO Add Score Update here
+        statDisplayManager.updateStats();
     }
-
 }
