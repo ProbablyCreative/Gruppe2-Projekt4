@@ -10,7 +10,6 @@ public class BloonsGoal_BackUp : MonoBehaviour
     {
         if (other.gameObject.tag == "Bloon")
         {
-            Debug.Log("Test");
             hitHP(other.gameObject.GetComponent<bloonSkript>().layer + 1);
             Destroy(other.gameObject);
         }
@@ -19,6 +18,7 @@ public class BloonsGoal_BackUp : MonoBehaviour
     private void hitHP(int damage)
     {
         GameData.hp -= damage;
+        GameData.hpU = damage;
         statDisplayManager.updateStats();
         if (GameData.hp <= 0)
         {
