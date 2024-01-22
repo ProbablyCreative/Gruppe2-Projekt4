@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: db961951423e0594db6a7aca197050b2
+guid: 09b5b291d9b316c41acb5f049e036c86
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - hpText: {instanceID: 0}
-  - Bloon: {fileID: 821958307181726487, guid: b99ee2d1dbd47a040b49a43df7cd17dd, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

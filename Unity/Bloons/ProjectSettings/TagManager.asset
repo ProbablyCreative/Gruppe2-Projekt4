@@ -8,6 +8,8 @@ TagManager:
   - SpawnManager
   - Dart
   - Bloon
+  - collision
+  - burg
   layers:
   - Default
   - TransparentFX
