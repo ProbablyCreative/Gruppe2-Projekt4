@@ -22,10 +22,22 @@ public class StatDisplay : MonoBehaviour
     public void UpdateStats()
     {
         textHP.text = "HP: " + GameData.hp;
-        textScore.text = "Score: " + GameData.score;
-        textMoney.text = "$: " + GameData.moneyy;
         textHPU.text = "- " + GameData.hpU;
+        textScore.text = "Score: " + GameData.score;
         textScoreU.text = "+ " + GameData.scoreU;
-        textMoneyU.text = "+ " + GameData.moneyyU;
+
+        textMoney.text = "$: " + GameData.moneyy;
+        if (GameData.moneyyU >= 0)
+        {
+            textMoneyU.text = "+ " + GameData.moneyyU;
+            textMoneyU.color = Color.green;
+        }
+        else
+        {
+            textMoneyU.text = "- " + -GameData.moneyyU;
+            textMoneyU.color = Color.red;
+        }
+        
+        
     }
 }

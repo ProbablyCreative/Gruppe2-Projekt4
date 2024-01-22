@@ -45,6 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f11f31d166d62749ba6ac8bd6b090e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statDisplayManager: {fileID: 0}
+  initHp: 100
+  currDart: {fileID: 0}
+  Darts:
+  - {fileID: 0}
+  fireCoolDown: 0.5
 --- !u!1 &7041054831537071926
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,4 +117,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0ed0921ec15cd43a97f7bdb64c7c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 313638828947848196}
+  statDisplayManager: {fileID: 0}

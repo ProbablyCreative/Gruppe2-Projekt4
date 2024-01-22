@@ -5,19 +5,29 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    public GameObject dartToFire;
     public float power = 1;
+    private float currCoolDown;
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        currCoolDown = 0;
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        if (currCoolDown > 0) {
+            currCoolDown -= Time.deltaTime;
+        }
     }
 
     public void fireDart()
-    { Vector3 rotCorr = new Vector3(0, 180, 0);
-        GameObject dart = Instantiate(dartToFire, transform.position, transform.rotation);
-        dart.GetComponent<Rigidbody>().AddForce(transform.forward * power * 10, ForceMode.Impulse);
+    { 
+        if (currCoolDown <= 0)
+        {
+            GameObject dart = Instantiate(GameManager_BackUp.GlobalGameManager.currDart, transform.position, transform.rotation);
+            dart.GetComponent<Rigidbody>().AddForce(transform.forward * power * 10, ForceMode.Impulse);
+            currCoolDown = GameManager_BackUp.GlobalGameManager.fireCoolDown;
+        }
+        
     }
 }
