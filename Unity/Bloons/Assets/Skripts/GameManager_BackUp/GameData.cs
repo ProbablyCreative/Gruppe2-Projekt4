@@ -1,7 +1,7 @@
 
 public class GameData
 {
-    public static int score;
+    public static int score = 0;
     public static int scoreU;
     public static int hp;
     public static int hpU;

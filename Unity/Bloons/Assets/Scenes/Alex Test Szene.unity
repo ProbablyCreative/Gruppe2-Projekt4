@@ -1989,6 +1989,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 313638828947848196, guid: bb58894204911a841b8bfc6d67fc552a,
         type: 3}
+      propertyPath: initHp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 313638828947848196, guid: bb58894204911a841b8bfc6d67fc552a,
+        type: 3}
       propertyPath: currDart
       value: 
       objectReference: {fileID: 5353827896546722914, guid: 80e960bc5fae69c4281a3688444ae678,
