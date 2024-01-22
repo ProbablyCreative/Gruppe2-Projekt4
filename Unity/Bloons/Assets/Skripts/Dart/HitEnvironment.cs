@@ -25,6 +25,7 @@ public class HitEnvironment : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             look.aktivateRotation = false;
             startDestoying = true;
+            GetComponent<BoxCollider>().enabled = false;
         }
 
     }

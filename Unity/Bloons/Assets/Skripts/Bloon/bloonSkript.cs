@@ -21,9 +21,6 @@ public class bloonSkript : MonoBehaviour
 
     public void hitThisBloon (int value)
     {
-        int scoreUpdate;
-        int money;
-
         if (layer + 1 > value)
         {
             gameManager.updateScore(value, GameManager_BackUp.rnd.Next(0, (value + 1) * 2));

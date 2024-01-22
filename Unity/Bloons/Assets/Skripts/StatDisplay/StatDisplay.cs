@@ -16,14 +16,18 @@ public class StatDisplay : MonoBehaviour
     private void Start()
     {
         Manager.Register(this);
-        UpdateStats();
+        UpdateStats(false);
     }
 
-    public void UpdateStats()
+    public void UpdateStats(bool newHighScore)
     {
         textHP.text = "HP: " + GameData.hp;
         textHPU.text = "- " + GameData.hpU;
         textScore.text = "Score: " + GameData.score;
+        if (newHighScore)
+        {
+            textScore.color = Color.yellow;
+        }
         textScoreU.text = "+ " + GameData.scoreU;
 
         textMoney.text = "$: " + GameData.moneyy;

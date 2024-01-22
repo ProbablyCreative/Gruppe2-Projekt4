@@ -5,11 +5,17 @@ using UnityEngine;
 public class StatDisplayManager : MonoBehaviour
 {
     [SerializeField] private List<StatDisplay> statDisplayList = new List<StatDisplay>();
+    [SerializeField] private bool newHighscore = false;
     public void updateStats()
     {
+        if (GameData.score > GameData.highScore)
+        {
+            GameData.highScore = GameData.score;
+            newHighscore = true;
+        }
         foreach (StatDisplay display in statDisplayList)
         {
-            display.UpdateStats();
+            display.UpdateStats(newHighscore);
         }
     }
 
