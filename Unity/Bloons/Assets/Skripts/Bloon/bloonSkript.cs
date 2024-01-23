@@ -10,7 +10,9 @@ public class bloonSkript : MonoBehaviour
     private Material[] layerList;
     public SpawnManager spawnManager;
     public MeshRenderer visual;
-
+    public Score score;
+    
+    
     
     private void Start()
     {
@@ -24,6 +26,7 @@ public class bloonSkript : MonoBehaviour
         if (layer < 0)
         {
             Destroy(gameObject);
+            score.AddScore(1);
             return;
         }
         updateLayer();
