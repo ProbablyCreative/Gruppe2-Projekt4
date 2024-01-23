@@ -6,10 +6,14 @@ using UnityEngine;
 public class BuyNextCoolDown : MonoBehaviour
 {
     public TextMeshProUGUI cost;
+    public GroupButtons group;
+    private UpgradeManager upgradeManager;
 
     private void Start()
     {
         UpdateCost();
+        upgradeManager = group.manager;
+        upgradeManager.registerCoolDown(this);
     }
     public void ActivateButton()
     {
@@ -23,7 +27,7 @@ public class BuyNextCoolDown : MonoBehaviour
             gameManager.updateMoney(-gameManager.coolDownCost[0]);
             gameManager.coolDownCost.RemoveAt(0);
             gameManager.fireCoolDown /= gameManager.fireCoolDownDiv;
-            UpdateCost();
+            upgradeManager.UpdateBuyStuff();
         }
     }
 

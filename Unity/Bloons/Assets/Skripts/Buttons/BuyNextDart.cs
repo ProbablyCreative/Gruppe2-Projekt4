@@ -6,10 +6,14 @@ using UnityEngine;
 public class BuyNextDart : MonoBehaviour
 {
     public TextMeshProUGUI cost;
+    public GroupButtons group;
+    private UpgradeManager upgradeManager;
 
     private void Start()
     {
         UpdatCost();
+        upgradeManager = group.manager;
+        upgradeManager.registerDart(this);
     }
     public void activateButton()
     {
@@ -24,7 +28,7 @@ public class BuyNextDart : MonoBehaviour
             gameManager.costDarts.RemoveAt(0);
             gameManager.currDart = gameManager.Darts[0];
             gameManager.Darts.RemoveAt(0);
-            UpdatCost();
+            upgradeManager.UpdateBuyStuff();
         }
     }
 

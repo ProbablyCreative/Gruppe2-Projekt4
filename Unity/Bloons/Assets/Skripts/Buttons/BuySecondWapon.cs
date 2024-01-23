@@ -9,12 +9,16 @@ public class BuySecondWapon : MonoBehaviour
     public GameObject weaponSpawn;
     public GameManager_BackUp gameManager;
     public TextMeshProUGUI cost;
+    public GroupButtons group;
+    private UpgradeManager upgradeManager;
     private static bool activated = false;
 
     private void Start()
     {
         gameManager = GameManager_BackUp.GlobalGameManager;
         updateCost();
+        upgradeManager = group.manager;
+        upgradeManager.registerWeapon(this);
     }
     public void activateButton()
     {
@@ -23,7 +27,7 @@ public class BuySecondWapon : MonoBehaviour
         {
             gameManager.updateMoney(-gameManager.woeaponCost);
             activated = true;
-            updateCost();
+            upgradeManager.UpdateBuyStuff();
             Instantiate(weapon, weaponSpawn.transform.position, weaponSpawn.transform.rotation);
         }
         

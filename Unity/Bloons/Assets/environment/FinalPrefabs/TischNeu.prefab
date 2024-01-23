@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.35
       objectReference: {fileID: 0}
+    - target: {fileID: 7492507954018369983, guid: 858daec72d576a54f980e5add9d283d7,
+        type: 3}
+      propertyPath: group
+      value: 
+      objectReference: {fileID: 8118209075815275994}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -152,6 +157,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuyNextCoolDown
       objectReference: {fileID: 0}
+    - target: {fileID: 6504671596730054279, guid: 40ccff4a55ec6344c8e4d49ea083c786,
+        type: 3}
+      propertyPath: group
+      value: 
+      objectReference: {fileID: 8118209075815275994}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -226,6 +236,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BuyNextDart
       objectReference: {fileID: 0}
+    - target: {fileID: 5218280467356180487, guid: f882f2039165c8542a312e00ea75ada2,
+        type: 3}
+      propertyPath: group
+      value: 
+      objectReference: {fileID: 8118209075815275994}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -317,6 +332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 91311ffbce332a74fb7f240a439a51f0,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 91311ffbce332a74fb7f240a439a51f0,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: aff86505fd5573f439ee711ada8888ed, type: 2}
@@ -354,6 +374,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7576218127043378838}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91311ffbce332a74fb7f240a439a51f0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8118209075815275994}
   m_SourcePrefab: {fileID: 100100000, guid: 91311ffbce332a74fb7f240a439a51f0, type: 3}
 --- !u!4 &7384745497950825420 stripped
 Transform:
@@ -409,3 +433,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.44515508, y: 0.5236544, z: 1.8019233}
   m_Center: {x: -0.06601696, y: -0.006643319, z: -0.35218608}
+--- !u!114 &8118209075815275994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867843847134802294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713d4f73f28f32d408b8a4547d6b061c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
