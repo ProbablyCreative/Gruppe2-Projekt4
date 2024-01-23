@@ -9,18 +9,19 @@ public class BuySecondWapon : MonoBehaviour
     public GameObject weaponSpawn;
     public GameManager_BackUp gameManager;
     public TextMeshProUGUI cost;
-    public int weaponCost = 400;
-    private bool activated = false;
+    private static bool activated = false;
 
     private void Start()
     {
+        gameManager = GameManager_BackUp.GlobalGameManager;
         updateCost();
     }
     public void activateButton()
     {
-        if (!activated && GameData.moneyy >= weaponCost )
+        updateCost();
+        if (!activated && GameData.moneyy >= gameManager.woeaponCost)
         {
-            gameManager.updateMoney(-weaponCost);
+            gameManager.updateMoney(-gameManager.woeaponCost);
             activated = true;
             updateCost();
             Instantiate(weapon, weaponSpawn.transform.position, weaponSpawn.transform.rotation);
@@ -35,6 +36,6 @@ public class BuySecondWapon : MonoBehaviour
             cost.text = "MAX";
             return;
         }
-        cost.text = "$" + weaponCost;
+        cost.text = "$" + gameManager.woeaponCost;
     }
 }

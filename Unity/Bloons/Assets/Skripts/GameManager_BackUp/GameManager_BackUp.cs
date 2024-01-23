@@ -15,6 +15,7 @@ public class GameManager_BackUp : MonoBehaviour
     public float fireCoolDown = 0.5f;
     public static System.Random rnd = new System.Random();
     public static GameManager_BackUp GlobalGameManager;
+    public int woeaponCost = 500;
     // Start is called before the first frame update
 
     private void Awake()
