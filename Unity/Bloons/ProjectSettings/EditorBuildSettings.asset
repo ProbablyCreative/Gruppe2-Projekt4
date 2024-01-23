@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menue.unity
     guid: 5d140b2bd6de2bf4ba07e3355afa1ed4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/New Scene.unity
     guid: 8a86930c882204c75a04e7f3367411ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Alex Test Szene.unity
     guid: f992ba7376785cf40bfda9c389999143
   m_configObjects:
