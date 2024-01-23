@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class HitEnvironment : MonoBehaviour
 {
     private Rigidbody rb;
     private LookInMovementDirection look;
-    private float countDown = 10f;
-    private bool startDestoying = false;
+    // private float countDown = 10f;
+    //private bool startDestoying = false;
 
     private void Start()
     {
