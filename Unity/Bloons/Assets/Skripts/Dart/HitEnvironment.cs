@@ -18,7 +18,7 @@ public class HitEnvironment : MonoBehaviour
         look = GetComponent<LookInMovementDirection>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Environment")
         {
@@ -28,17 +28,13 @@ public class HitEnvironment : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
         }
 
-    }
+    }*/
 
     private void FixedUpdate()
     {
-        if (countDown < 0)
+        if (gameObject.transform.position.y < -15)
         {
             Destroy(gameObject);
-        }
-        if (startDestoying)
-        {
-            countDown -= Time.fixedDeltaTime;
         }
         
     }
