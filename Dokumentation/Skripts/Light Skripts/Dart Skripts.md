@@ -1,0 +1,1 @@
+![[Dokumentation/Skripts/Light Skripts/GoDark.cs|GoDark.cs]]
