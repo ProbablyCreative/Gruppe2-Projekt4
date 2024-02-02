@@ -1,0 +1,3 @@
+**Das Ziel** des Spiels ist es einen höchst möglichen Score zu erreichen. Der Score sowie der Highscore der aktuellen Session wird im Menü nachdem das Game vorbei ist angezeigt. Die Bloons kommen unendlich lange und werden immer schwerer und kommen in immer höheren Zahlen. 
+
+**Das Ende** des Spiel ist, wenn die HP auf 0 oder weniger sinken. HP werden abgezogen wenn ein Bloon das ende erreicht (Deine Burg). Je stärker der Bloon des zu mehr HP werden abgezogen. Wie stark welcher Bloon ist, gilt es herauszufinden

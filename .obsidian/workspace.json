@@ -38,26 +38,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7495395c98a8814",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
+                "file": "Dokumentation/Spielanleitung/Ziel und Ende des Spiels.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "9044b41fcfbad48e",
@@ -79,6 +67,18 @@
               "type": "markdown",
               "state": {
                 "file": "Dokumentation/Bloons - Dokumentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7495395c98a8814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dokumentation/Spielanleitung/Spielanleitung.md",
                 "mode": "source",
                 "source": false
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
+                "file": "Dokumentation/Bloons - Dokumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
+                "file": "Dokumentation/Bloons - Dokumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md"
+                "file": "Dokumentation/Bloons - Dokumentation.md"
               }
             }
           }
@@ -212,19 +212,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7495395c98a8814",
+  "active": "4ae373f89e20e79d",
   "lastOpenFiles": [
-    "Dokumentation/Spielanleitung.md",
+    "Dokumentation/Spielanleitung/Spielanleitung.md",
+    "Dokumentation/Spielanleitung/Ziel und Ende des Spiels.md",
+    "Dokumentation/Spielanleitung/Spielen des Spiels.md",
+    "Dokumentation/Spielanleitung/Steuerung.md",
+    "Dokumentation/Spielanleitung/Starten des Spiels.md",
+    "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
+    "Dokumentation/Spielanleitung",
+    "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
     "Dokumentation/Bloons - Dokumentation.md",
     "Dokumentation/Zusammenfassung und Ausblick.md",
     "Dokumentation/Verwendete Tools.md",
-    "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
     "Dokumentation/Aufteilung der Aufgabenbereiche.md",
     "Dokumentation/Mitwirkende.md",
     "Dokumentation/Titel.md",
     "Dokumentation/Idee.md",
     "Dokumentation/Skripts/Untitled.md",
-    "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
     "Dokumentation/Skripts/Waffen Skripts/Fire.cs.md",
     "Dokumentation/Skripts/Display Skripts/Display Skripts.md",
     "Dokumentation/Skripts/Waffen Skripts",
@@ -240,15 +245,10 @@
     "Dokumentation/Skripts/Path Skripts/FollowThePath.cs.md",
     "Dokumentation/Skripts/Light Skripts/Dart Skripts.md",
     "Dokumentation/Skripts/Path Skripts",
-    "Dokumentation/Skripts/Light Skripts/GoDark.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/Manager Skripts.md",
     "Dokumentation/Skripts/Light Skripts",
-    "Dokumentation/Skripts/Manager Skripts/StatDisplayManager.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/SpawnManager.cs.md",
     "Dokumentation/Skripts/Manager Skripts",
     "Dokumentation/Skripts/Dart Skripts",
     "Dokumentation/Skripts/Button Skripts",
-    "Dokumentation/Skripts/Bloon Skripts",
-    "Dokumentation/Skripts/Blo"
+    "Dokumentation/Skripts/Bloon Skripts"
   ]
 }
