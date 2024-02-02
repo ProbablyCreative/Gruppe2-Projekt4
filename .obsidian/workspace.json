@@ -6,7 +6,7 @@
       {
         "id": "753e274b1389ab8d",
         "type": "tabs",
-        "dimension": 34.025270758122744,
+        "dimension": 46.254512635379065,
         "children": [
           {
             "id": "3b561fd445126874",
@@ -43,14 +43,26 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c7495395c98a8814",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "9044b41fcfbad48e",
         "type": "tabs",
-        "dimension": 65.97472924187726,
+        "dimension": 53.745487364620935,
         "children": [
           {
             "id": "4b783e7d72bd2b72",
@@ -61,7 +73,7 @@
             }
           },
           {
-            "id": "c7495395c98a8814",
+            "id": "4ae373f89e20e79d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -139,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md",
+                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md",
+                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md"
+                "file": "Dokumentation/Verwendete Assets und Fremdmaterialien.md"
               }
             }
           }
@@ -202,8 +214,17 @@
   },
   "active": "c7495395c98a8814",
   "lastOpenFiles": [
-    "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
+    "Dokumentation/Spielanleitung.md",
     "Dokumentation/Bloons - Dokumentation.md",
+    "Dokumentation/Zusammenfassung und Ausblick.md",
+    "Dokumentation/Verwendete Tools.md",
+    "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
+    "Dokumentation/Aufteilung der Aufgabenbereiche.md",
+    "Dokumentation/Mitwirkende.md",
+    "Dokumentation/Titel.md",
+    "Dokumentation/Idee.md",
+    "Dokumentation/Skripts/Untitled.md",
+    "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
     "Dokumentation/Skripts/Waffen Skripts/Fire.cs.md",
     "Dokumentation/Skripts/Display Skripts/Display Skripts.md",
     "Dokumentation/Skripts/Waffen Skripts",
@@ -222,18 +243,9 @@
     "Dokumentation/Skripts/Light Skripts/GoDark.cs.md",
     "Dokumentation/Skripts/Manager Skripts/Manager Skripts.md",
     "Dokumentation/Skripts/Light Skripts",
-    "Dokumentation/Skripts/Untitled.md",
     "Dokumentation/Skripts/Manager Skripts/StatDisplayManager.cs.md",
     "Dokumentation/Skripts/Manager Skripts/SpawnManager.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/GameManager_BackUp.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/GameData.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/BloonsGoal_BackUp.cs.md",
-    "Dokumentation/Skripts/Manager Skripts/UpgradeManager.cs.md",
     "Dokumentation/Skripts/Manager Skripts",
-    "Dokumentation/Skripts/Dart Skripts/Dart Skripts.md",
-    "Dokumentation/Skripts/Dart Skripts/LookInMovementDirection.cs.md",
-    "Dokumentation/Skripts/Dart Skripts/HitEnvironment.cs.md",
-    "Dokumentation/Skripts/Dart Skripts/dart.cs.md",
     "Dokumentation/Skripts/Dart Skripts",
     "Dokumentation/Skripts/Button Skripts",
     "Dokumentation/Skripts/Bloon Skripts",

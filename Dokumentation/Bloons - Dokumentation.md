@@ -1,19 +1,32 @@
 ## Titel
-Unser Spiel heißt **Bloons**, was sich an das Spiel [Bloons Tower Defence](https://btd6.com/) anlehnt. 
+
+![[Titel]]
+
 
 ## Idee
 
+![[Idee]]
+
+
 ## Mitwirkende
+
+![[Mitwirkende]]
+
+
+## Aufteilung der Aufgabenbereiche
+
+![[Aufteilung der Aufgabenbereiche]]
+
 
 ## Verwendete Tools
 
-### Software
+![[Verwendete Tools]]
 
-### Hardware
 
 ## Verwendete Assets und Fremdmaterialien
 
-Wir haben **keine** Assets und Fremdmaterialien benutzt und alle Grafiken und Skripts selbst geschrieben. (Mit Ausnahme des XR Plugins von Unity und dem Standard TextMeshPro Plugin von Unity selbst, allerdings gehören diese ja zu Unity)
+![[Verwendete Assets und Fremdmaterialien]]
+
 
 ## Skripts
 
@@ -34,3 +47,11 @@ Wir haben **keine** Assets und Fremdmaterialien benutzt und alle Grafiken und Sk
 ![[Display Skripts]]
 
 ![[Waffen Skripts]]
+
+## Zusammenfassung und Ausblick
+
+![[Zusammenfassung und Ausblick]]
+
+## Spielanleitung
+
+![[Spielanleitung]]
