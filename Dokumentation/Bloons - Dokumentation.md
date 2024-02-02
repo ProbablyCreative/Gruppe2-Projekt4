@@ -94,9 +94,74 @@ Diese Klasse speichert alle Wichtigen Einstellungen des Aktuellen
 Spiels wie z.b. CoolDown / StartHP / Costen / Upgrades etc.
 Zudem hat diese Klasse eine `updateScore(int,int)` und eine `updateMoney(int)` Funktion, welche immer zum ändern des Scores und des Geldes verwendet wird. Dies Funktionen updaten auch zugehörige Displays.
 
+#### SpawnManager.cs
+![[SpawnManager.cs]]
+- *Autor: Alexander Hinz*
+Diese Klasse Speichert aktuell nur die Verschiedenen Materialien für die Bloon Schichten.
+
+#### StatDisplayManager.cs
+![[StatDisplayManager.cs]]
+- *Autor: Alexander Hinz*
+Diese Skirpt verwaltet alle Displays. Diese Tragen sich von selbst hier ein. Wenn sich etwas ändert ruft dieser Manager alle Update Methoden er einzelnen Anzeigen auf. 
+Dies ist aus Optimierungsgründen so umgesetzt, damit nicht jedes Display, jeden Frame, aktualisiert. 
+
 ### Light Skripts
 
 #### GoDart.cs
 ![[GoDark.cs]]
 - *Autor: Alexander Hinz*
 Diese Klasse ändert die Tageszeit zu Abend ab einem Bestimmtem Score. 
+
+### Path Skripts
+
+#### PathHolder.s
+![[PathHolder.cs]]
+- *Autor: Alexander Hinz*
+Ein Skript, was auf ein Gameobjekt gelegt werden kann um es zu einem Path zu machen. Hierfür müssen die Eckpunkte nur als Gameobjekte in das Array gelegt werden und jedes Objekt mit dem FollowThePath.cs Skript wird diesen Punkten Folgen.
+
+#### FollowThePath.cs
+![[FollowThePath.cs]]
+- *Autor: Alexander Hinz*
+Dieses Skript Lässt Objekte eine Path folgen.
+
+### Spawner Skripts
+
+#### SpawnBloons.cs
+![[SpawnBloons.cs]]
+- *Autor: Alexander Hinz*
+Diese Klasse ist für das Spawnen der Bloons verantwortlich. Dies ist extrem fein einstellbar. Einstellbar ist:
+- Wann dieser Spawner Startet
+- Mit Welchem Layer er Bloons spawnt
+- Mit welchen Abständen er diese spawnt
+- Ab welchem Score er stärker wird
+- Wie viele größer der Abstand zu nächsten Score Stufe ist
+- Wie viel Layer für die nächste Stärke dazu kommen
+- Wie viel schnelle die Bloons Spawnen bei der nächsten Stärke
+Es können beliebig viele Spawner gleichzeitig mit verschieden settings existieren.
+
+### Display Skripts
+
+#### MenuScore.cs
+![[MenuScore.cs]]
+- *Autor: Alexander Hinz*
+Diese Klasse ist für das anzeigen des Scores und des Highscores verantwortlich.
+
+#### StatDisplay.cs
+![[StatDisplay.cs]]
+ - *Autor: Alexander Hinz*
+ Diese Klasse Verwaltet ein "Display", welches folgende Daten zeigt:
+ - HP
+ - Score
+ - $
+ - Letze HP Änderung
+ - Letzte Score Änderung
+ - Letzte $ Änderung
+
+Die `UpdateStats(bool)` Methode aktualisiert die Anzeige und wird von außerhalb aufgerufen, wenn sich etwas ändert.
+
+### Waffen Skripts
+
+#### Fire.cs
+![[Fire.cs]]
+- *Autor: Alexander Hinz*
+Dieses Skript Verwaltet den Cool down für das schießen und beinhaltet die `fireDart()` Methode, welche eine Dart feuert und von einem Controller, welcher die Waffe in der Hand hat, durch den Trigger aufgerufen. 
