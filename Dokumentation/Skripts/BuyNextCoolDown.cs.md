@@ -1,0 +1,3 @@
+![[BuyNextCoolDown.cs]]
+- *Autor: Alexander Hinz*
+Diese Klasse managend ein Upgrade Cube, welcher die die Angriffsgeschwindigkeit erhöht. Bei Aktivierung von `ActivateButton()` , was bei auswählen mit dem Controller passiert, wird überprüft ob es noch ein weiters Lvl gibt, und ob genug Geld vorhanden ist. Wenn beides zutrifft, dann wird das Geld abgezogen, ein Update an den Upgrade Manager geschickt um die Anzeigen aller Upgrade Objekte zu aktualisieren. 
