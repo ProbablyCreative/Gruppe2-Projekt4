@@ -22,7 +22,3 @@ Wir haben **keine** Assets und Fremdmaterialien benutzt und alle Grafiken und Sk
 #### bloonSkript.cs
 ![[bloonSkript.cs]]
 Dieses Skript verwaltet die Layer der Bloons und gibt die Möglichkeit einen Hit einzutragen (`hitThisBloon(int)`). Diese Funktion ruft `updateLayer()` auf, welche die Layer visuell aktualisiert.
-
-#### BallonMovment.cs
-![[BallonMovment;.cs]]
-
