@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "23f4a4331e71bb5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "753e274b1389ab8d",
+        "type": "tabs",
+        "dimension": 55.505415162454874,
+        "children": [
+          {
+            "id": "3b561fd445126874",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Bloons - Dokumentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9044b41fcfbad48e",
+        "type": "tabs",
+        "dimension": 44.494584837545126,
+        "children": [
+          {
+            "id": "4b783e7d72bd2b72",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "614af8e7d416f91e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0af019b251adbb4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ada4cbcc69a86a86",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "554e6e71ce734e30",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e5408ff7c2fbc68c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eb506abb84ffb981",
+    "type": "split",
+    "children": [
+      {
+        "id": "e831a04a4d91dcb7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfbb9ade9b38764f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "535dd667bcdb063f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1d2c2a57a700a673",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "538dcf8d9a84d3eb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4b783e7d72bd2b72",
+  "lastOpenFiles": [
+    "Bloons - Dokumentation.md",
+    "Skripts/Wapon/Fire.cs.meta",
+    "Skripts/Wapon/Fire.cs",
+    "Skripts/Wapon",
+    "Skripts/StatDisplay/StatDisplayManager.cs.meta",
+    "Skripts/StatDisplay/StatDisplayManager.cs",
+    "Skripts/StatDisplay/StatDisplay.cs.meta",
+    "Skripts/StatDisplay/StatDisplay.cs",
+    "Skripts/StatDisplay/MenuScore.cs.meta",
+    "Skripts/StatDisplay/MenuScore.cs",
+    "Skripts/StatDisplay",
+    "[Bloons™.md"
+  ]
+}
