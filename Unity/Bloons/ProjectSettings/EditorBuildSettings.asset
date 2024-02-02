@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Scene.unity
     guid: 8a86930c882204c75a04e7f3367411ad
+  - enabled: 0
+    path: Assets/Scenes/Alex Test Szene.unity
+    guid: f992ba7376785cf40bfda9c389999143
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1ef27425014fcb44087dbd9ee78bd9cf,
       type: 2}
