@@ -1,0 +1,1 @@
+Um das Spiel zu starten muss die Ovale Tafel mit dem Play Symbol (Dreieck) ausgewählt werden. Von dort gelangt man dann in das Eigentliche Spiel
