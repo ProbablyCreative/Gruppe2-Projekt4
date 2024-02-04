@@ -6,7 +6,7 @@
       {
         "id": "753e274b1389ab8d",
         "type": "tabs",
-        "dimension": 46.254512635379065,
+        "dimension": 46.25451263537907,
         "children": [
           {
             "id": "3b561fd445126874",
@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dokumentation/Spielanleitung/Ziel und Ende des Spiels.md",
+                "file": "Dokumentation/Spielanleitung/Spielanleitung.md",
                 "mode": "source",
                 "source": false
               }
@@ -50,7 +50,7 @@
       {
         "id": "9044b41fcfbad48e",
         "type": "tabs",
-        "dimension": 53.745487364620935,
+        "dimension": 53.74548736462093,
         "children": [
           {
             "id": "4b783e7d72bd2b72",
@@ -151,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md",
+                "file": "Dokumentation/Spielanleitung/Spielanleitung.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md",
+                "file": "Dokumentation/Spielanleitung/Spielanleitung.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dokumentation/Bloons - Dokumentation.md"
+                "file": "Dokumentation/Spielanleitung/Spielanleitung.md"
               }
             }
           }
@@ -212,9 +212,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ae373f89e20e79d",
+  "active": "3db2ce0af692539f",
   "lastOpenFiles": [
+    "Dokumentation/Bloons - Dokumentation.md",
+    "Dokumentation/Builds.md",
+    "().md",
     "Dokumentation/Spielanleitung/Spielanleitung.md",
+    "Dokumentation/Spielanleitung/Video.md",
+    "Dokumentation/Untitled.md",
     "Dokumentation/Spielanleitung/Ziel und Ende des Spiels.md",
     "Dokumentation/Spielanleitung/Spielen des Spiels.md",
     "Dokumentation/Spielanleitung/Steuerung.md",
@@ -222,7 +227,6 @@
     "Dokumentation/Skripts/Waffen Skripts/Waffen Skripts.md",
     "Dokumentation/Spielanleitung",
     "Dokumentation/Verwendete Assets und Fremdmaterialien.md",
-    "Dokumentation/Bloons - Dokumentation.md",
     "Dokumentation/Zusammenfassung und Ausblick.md",
     "Dokumentation/Verwendete Tools.md",
     "Dokumentation/Aufteilung der Aufgabenbereiche.md",
@@ -239,11 +243,7 @@
     "Dokumentation/Skripts/Display Skripts",
     "Dokumentation/Skripts/Spawner Skripts/SpawnBloons.cs.md",
     "Dokumentation/Skripts/Spawner Skripts/Untitled.md",
-    "Dokumentation/Skripts/Path Skripts/Path Skripts.md",
     "Dokumentation/Skripts/Spawner Skripts",
-    "Dokumentation/Skripts/Path Skripts/PathHolder.cs.md",
-    "Dokumentation/Skripts/Path Skripts/FollowThePath.cs.md",
-    "Dokumentation/Skripts/Light Skripts/Dart Skripts.md",
     "Dokumentation/Skripts/Path Skripts",
     "Dokumentation/Skripts/Light Skripts",
     "Dokumentation/Skripts/Manager Skripts",
